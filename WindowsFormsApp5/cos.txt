@@ -1,0 +1,22 @@
+using system;
+using system.collections.generic;
+using system.linq;
+using system.threading.tasks;
+using system.windows.forms;
+
+namespace windowsformsapp5
+{
+    static class program
+    {
+        /// <summary>
+        /// główny punkt wejścia dla aplikacji.
+        /// </summary>
+        [stathread]
+        static void main()
+        {
+            application.enablevisualstyles();
+            application.setcompatibletextrenderingdefault(false);
+            application.run(new form1());
+        }
+    }
+}
